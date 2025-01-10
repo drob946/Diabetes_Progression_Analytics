@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='diabetes_enhanced' inline='true' name='federated.01mwacv13h6hku13egtce1wsr0kf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='diabetes_enhanced' name='textscan.1qzdedc0l0azqm1blqdmn0fhd748'>
+            <connection class='textscan' directory='C:/Users/drobe/Desktop/Capstone/data/processed' filename='diabetes_enhanced.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qzdedc0l0azqm1blqdmn0fhd748' name='diabetes_enhanced.csv' table='[diabetes_enhanced#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='age' ordinal='0' />
+            <column datatype='real' name='sex' ordinal='1' />
+            <column datatype='real' name='bmi' ordinal='2' />
+            <column datatype='real' name='bp' ordinal='3' />
+            <column datatype='real' name='s1' ordinal='4' />
+            <column datatype='real' name='s3' ordinal='5' />
+            <column datatype='real' name='s4' ordinal='6' />
+            <column datatype='real' name='s5' ordinal='7' />
+            <column datatype='real' name='s6' ordinal='8' />
+            <column datatype='real' name='bmi_squared' ordinal='9' />
+            <column datatype='real' name='bmi_bp' ordinal='10' />
+            <column datatype='real' name='target' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bp]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>bp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[s1]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>s1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[s3]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>s3</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[s4]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>s4</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[s5]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>s5</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[s6]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>s6</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi_squared</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi_squared]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>bmi_squared</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi_bp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bmi_bp]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>bmi_bp</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>target</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[target]</local-name>
+            <parent-name>[diabetes_enhanced.csv]</parent-name>
+            <remote-alias>target</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-3' formula='[age]' peg='0' size='0.344' />
+      </column>
+      <column caption='Number of Records' datatype='integer' name='[Calculation_2141180181511553024]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='diabetes_enhanced.csv' datatype='table' name='[__tableau_internal_object_id__].[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Age' datatype='real' name='[age]' role='dimension' type='ordinal' />
+      <column aggregation='None' caption='bmi (bin)' datatype='integer' name='[bmi (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-3' formula='[bmi]' peg='0' size='0.241' />
+      </column>
+      <column datatype='real' name='[bmi]' role='measure' type='quantitative' />
+      <column caption='Bmi Bp' datatype='real' name='[bmi_bp]' role='measure' type='quantitative' />
+      <column caption='Bmi Squared' datatype='real' name='[bmi_squared]' role='measure' type='quantitative' />
+      <column caption='Bp' datatype='real' name='[bp]' role='measure' type='quantitative' />
+      <column caption='S1' datatype='real' name='[s1]' role='measure' type='quantitative' />
+      <column caption='S3' datatype='real' name='[s3]' role='measure' type='quantitative' />
+      <column caption='S4' datatype='real' name='[s4]' role='measure' type='quantitative' />
+      <column caption='S5' datatype='real' name='[s5]' role='measure' type='quantitative' />
+      <column caption='S6' datatype='real' name='[s6]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Sex' datatype='real' name='[sex]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='-0.93853666088745935' value='Female' />
+          <alias key='1.0654884797514641' value='Male' />
+        </aliases>
+      </column>
+      <column caption='Target' datatype='real' name='[target]' role='measure' type='quantitative' />
+      <column-instance column='[sex]' derivation='None' name='[none:sex:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/drobe/AppData/Local/Temp/TableauTemp/#TableauTemp_062ghhg1jlruv114q4rh00p0x5j8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/08/2025 02:52:20 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sex</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sex</remote-alias>
+              <ordinal>1</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bmi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bmi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bmi</remote-alias>
+              <ordinal>2</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>161</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bp</remote-alias>
+              <ordinal>3</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[s1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s1</remote-alias>
+              <ordinal>4</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>136</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[s3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s3</remote-alias>
+              <ordinal>5</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s4</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[s4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s4</remote-alias>
+              <ordinal>6</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[s5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s5</remote-alias>
+              <ordinal>7</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s6</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[s6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s6</remote-alias>
+              <ordinal>8</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bmi_squared</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bmi_squared]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bmi_squared</remote-alias>
+              <ordinal>9</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>161</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bmi_bp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bmi_bp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bmi_bp</remote-alias>
+              <ordinal>10</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>435</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>target</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>target</remote-alias>
+              <ordinal>11</ordinal>
+              <family>diabetes_enhanced.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>214</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:sex:ok]' type='shape'>
+            <map to='Gender/4.png'>
+              <bucket>1.0654884797514641</bucket>
+            </map>
+            <map to='Gender/5.png'>
+              <bucket>-0.93853666088745935</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:sex:ok]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>1.0654884797514641</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>-0.93853666088745935</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='diabetes_enhanced.csv' id='diabetes_enhanced.csv_59DE0F8BA03F4AE3A67BD4BEE0867693'>
+            <properties context=''>
+              <relation connection='textscan.1qzdedc0l0azqm1blqdmn0fhd748' name='diabetes_enhanced.csv' table='[diabetes_enhanced#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='age' ordinal='0' />
+                  <column datatype='real' name='sex' ordinal='1' />
+                  <column datatype='real' name='bmi' ordinal='2' />
+                  <column datatype='real' name='bp' ordinal='3' />
+                  <column datatype='real' name='s1' ordinal='4' />
+                  <column datatype='real' name='s3' ordinal='5' />
+                  <column datatype='real' name='s4' ordinal='6' />
+                  <column datatype='real' name='s5' ordinal='7' />
+                  <column datatype='real' name='s6' ordinal='8' />
+                  <column datatype='real' name='bmi_squared' ordinal='9' />
+                  <column datatype='real' name='bmi_bp' ordinal='10' />
+                  <column datatype='real' name='target' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.01mwacv13h6hku13egtce1wsr0kf'>
+      <datasources>
+        <datasource caption='diabetes_enhanced' name='federated.01mwacv13h6hku13egtce1wsr0kf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01mwacv13h6hku13egtce1wsr0kf'>
+        <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+          <calculation class='bin' decimals='-3' formula='[age]' peg='0' size='0.344' />
+        </column>
+        <column aggregation='Sum' caption='Age' datatype='real' name='[age]' role='dimension' type='ordinal' />
+        <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:Age (bin):ok]'>
+        <groupfilter function='level-members' level='[none:Age (bin):ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Scatter Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='diabetes_enhanced' name='federated.01mwacv13h6hku13egtce1wsr0kf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01mwacv13h6hku13egtce1wsr0kf'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-3' formula='[age]' peg='0' size='0.344' />
+            </column>
+            <column aggregation='Sum' caption='Age' datatype='real' name='[age]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[bmi]' role='measure' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[bmi]' derivation='None' name='[none:bmi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sex]' derivation='None' name='[none:sex:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[target]' derivation='None' name='[none:target:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Sex' datatype='real' name='[sex]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-0.93853666088745935' value='Female' />
+                <alias key='1.0654884797514641' value='Male' />
+              </aliases>
+            </column>
+            <column caption='Target' datatype='real' name='[target]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]'>
+            <groupfilter function='level-members' level='[none:sex:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]</column>
+            <column>[federated.01mwacv13h6hku13egtce1wsr0kf].[none:Age (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:bmi:qk]' value='54' />
+            <format attr='title' class='0' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:bmi:qk]' scope='cols' value='BMI' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='total' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' id='legend-color' value='#f5eddc' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' value='Sex'>
+              <formatted-text>
+                <run>Sex</run>
+              </formatted-text>
+            </format>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' value='#f5eddc' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:Age (bin):ok]' value='#faf4e7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='1' />
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='solid' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01mwacv13h6hku13egtce1wsr0kf].[none:target:qk]</rows>
+        <cols>[federated.01mwacv13h6hku13egtce1wsr0kf].[none:bmi:qk]</cols>
+        <show-full-range>
+          <column>[federated.01mwacv13h6hku13egtce1wsr0kf].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D2752976-2FA4-4C32-9F53-11B925F9629C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E3DDF283-3733-4963-A181-3BAE9410CB37}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Capstone Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='diabetes_enhanced' name='federated.01mwacv13h6hku13egtce1wsr0kf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.01mwacv13h6hku13egtce1wsr0kf'>
+        <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+          <calculation class='bin' decimals='-3' formula='[age]' peg='0' size='0.344' />
+        </column>
+        <column aggregation='Sum' caption='Age' datatype='real' name='[age]' role='dimension' type='ordinal' />
+        <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+        <column-instance column='[sex]' derivation='None' name='[none:sex:ok]' pivot='key' type='ordinal' />
+        <column aggregation='Sum' caption='Sex' datatype='real' name='[sex]' role='dimension' type='ordinal'>
+          <aliases>
+            <alias key='-0.93853666088745935' value='Female' />
+            <alias key='1.0654884797514641' value='Male' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98134' id='7' param='horz' type-v2='layout-flow' w='99320' x='340' y='933'>
+            <zone h='98134' id='5' type-v2='layout-basic' w='97958' x='340' y='933'>
+              <zone h='94151' id='3' name='Scatter Plot' show-title='false' w='97958' x='340' y='933'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3983' id='8' mode='dropdown' name='Scatter Plot' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' type-v2='filter' w='23996' x='340' y='95084'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3983' id='16' leg-item-layout='horz' name='Scatter Plot' pane-specification-id='0' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' show-title='false' type-v2='color' w='11328' x='24336' y='95084'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3983' id='23' mode='slider' name='Scatter Plot' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:Age (bin):ok]' type-v2='filter' values='database' w='62634' x='35664' y='95084'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='32' h='98134' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='1362' x='98298' y='933'>
+              <zone fixed-size='86' h='10968' id='9' is-fixed='true' name='Scatter Plot' pane-specification-id='0' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' type-v2='shape' w='1362' x='98298' y='933'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='38' param='vert' type-v2='layout-flow' w='99318' x='341' y='935'>
+                <zone h='3976' id='8' mode='dropdown' name='Scatter Plot' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' type-v2='filter' w='24000' x='341' y='95089'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3976' id='23' mode='slider' name='Scatter Plot' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:Age (bin):ok]' type-v2='filter' values='database' w='62626' x='35671' y='95089'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='94154' id='3' is-fixed='true' name='Scatter Plot' show-title='false' w='97956' x='341' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3976' id='16' leg-item-layout='horz' name='Scatter Plot' pane-specification-id='0' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' show-title='false' type-v2='color' w='11330' x='24341' y='95089'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='86' h='10982' id='9' name='Scatter Plot' pane-specification-id='0' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' type-v2='shape' w='1362' x='98297' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DA35BB91-0D00-46F1-A52D-7C8B7BB007B9}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='Scatter Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card mode='slider' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:Age (bin):ok]' type='filter' />
+            <card param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' type='filter' />
+            <card type='title' />
+            <card pane-specification-id='0' param='[federated.01mwacv13h6hku13egtce1wsr0kf].[none:sex:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1CF9E1FD-ECAD-4B7B-A17F-3C993AE73628}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Capstone Dashboard'>
+      <viewpoints>
+        <viewpoint name='Scatter Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{630CA957-AEB3-457B-8968-A74B16A3993B}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{292AA44A-7A47-408E-9865-EED2C9FE8935}' />
+    </window>
+  </windows>
+</workbook>
